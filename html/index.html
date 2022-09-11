@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Home Furniture Store">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAVICI STORE</title>
+    <!--===================== Main Css File =====================-->
+    <link rel="stylesheet" href="../sass/main.css">
+    <!--===================== Font Awesome Link =====================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!--===================== Link Swiper's CSS =====================-->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+    <div class="menu-oevrlay"></div>
+    <!--!=======================================================================================-->
+    <!-- Start Header Section -->
+    <header id="header">
+        <!-- Top Bar --->
+        <div id="topbar">
+            <div class="container">
+                <!-- Top Bar Content -->
+                <div class="topbar-content">
+                    <!-- Top Bar Menu ----->
+                    <ul class="topbar-menu">
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">contact</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">reviews</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">support</a>
+                        </li>
+                    </ul>
+
+                    
+                    <!-- Top Bar Right ------>
+                    <div class="topbar-right">
+                        <!-- Email -->
+                        <div class="email">
+                            <i class="fa-regular fa-envelope"></i>
+                            <a href="#">
+                                <span>mokasha737@gmail.com</span>
+                            </a>
+                        </div>
+                        <!-- Social Link ------->
+                        <div class="social-link">
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header Mobile ------->
+        <div class="header-mobile">
+            <div class="container">
+                <!-- Row ------->
+                <div class="row">
+                    <!-- Header Left ------->
+                    <div class="header-left">
+                        <!-- Navbar Header ------->
+                        <div class="navber-header">
+                        <!-- Open Menu btn -->
+                        <button id="open-menu" class="btn">
+                            <span class="icon"></span>
+                        </button>
+                        </div>
+                    </div>
+
+                    <!-- Header Center ------->
+                    <div class="header-center">
+                        <!-- Logo -->
+                        <a href="index.html" class="logo">
+                            <img src="../images/logo.png" alt="logo">
+                        </a>
+                    </div>
+
+                    <!-- Header Right ------->
+                    <div class="header-right">
+                        <!-- Navbar Toggle Btn -->
+                        <button id="show-verticalmenu" class="navbar-toggle">
+                            <span class="icon"></span>
+                        </button>
+                        <!-- Cart Button ----------->
+                        <button class="btn cart-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <!-- Cart Items Count -->
+                            <span class="cart-count">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search Form Mobile -->
+            <div id="search-form-mobile">
+                <!-- Close Search Form Btn ------>
+                <button id="close-searchForm" class="btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <form action="" id="serach_form">
+                    <div class="search-box">
+                        <input type="search" name="search" placeholder="search">
+                        <button id="searchSubmit" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Header Mobile Fixed ------->
+        <div class="header-mobile-fixed">
+            <div class="container">
+                <!-- Hedaer Mobile Buttons -->
+                <div class="header-mobile-btns">
+                    <!-- Shop Page -->
+                    <div class="shop-page">
+                        <a href="shop.html" id="shop-btn" class="btn">
+                            <i class="fa-solid fa-store"></i>
+                        </a>
+                    </div>
+                    <!-- Account Page -->
+                    <div class="account-page">
+                    <a href="account.html" id="account-btn" class="btn">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                    </div>
+                    <!-- Seacrh Box -->
+                    <div class="search-box">
+                        <!-- Search Btn -->
+                        <button id="search-btn" class="btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header Desktop ------->
+        <div class="header-desktop">
+            <!-- Header Wrapper (1) ------->
+            <div class="header-wrapper">
+                <div class="container">
+                    <!-- Row ------->
+                    <div class="main-header">
+                        <!-- Header Left ------->
+                        <div class="header-left">
+                            <!-- Logo ------>
+                            <a href="index.html" class="logo">
+                                <img src="../images/logo.png" alt="logo">
+                            </a>
+
+                            <!-- Serach Box ------->
+                            <form class="search-form">
+                                <!-- Input ----->
+                                <input type="search" name="search" required
+                                class="search-input" placeholder="Search..">
+                                <!-- Select Category ------->
+                                <div class="select_category">
+                                    <span class="toggle-dropdown"
+                                    onclick="categoryDropdown()">all category</span>
+                                    <span class="caret"></span>
+                                    <!-- Dropdown Menu --------->
+                                    <ul class="dropdown-menu category-search">
+                                        <li class="active cat">all category</li>
+                                        <li data-value="decor" class="cat">Decor</li>
+                                        <li data-value="dining-chair" class="cat">Dining Chair</li>
+                                        <li data-value="dining-room" class="cat">Dining Room</li>
+                                        <li data-value="furniture" class="cat">Furniture</li>
+                                        <li data-value="living-room" class="cat">Living Room</li>
+                                        <li data-value="sofas" class="cat">Sofas</li>
+                                        <li data-value="table" class="cat">Table</li>
+                                        <li data-value="wall-lamp" class="cat">Wall Lamp</li>
+                                    </ul>
+                                </div>
+
+                                <!-- Search Btn --->
+                                <button class="btn" type="submit">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </form>
+                        </div>
+
+                        <!-- Header Right ------->
+                        <div class="header-right">
+                            <!-- Services ------->
+                            <div class="services">
+                                <!-- Box 1 ----->
+                                <div class="box">
+                                    <i class="fa-solid fa-truck fa-2x"></i>
+                                    <!-- Text -->
+                                    <div class="text">
+                                        <span>FREE SHIPPING</span>
+                                        <strong>over order $120</strong>
+                                    </div>
+                                </div>
+                                <!-- Box 2 ----->
+                                <div class="box">
+                                    <i class="fa-solid fa-headphones fa-2x"></i>
+                                    <!-- Text -->
+                                    <div class="text">
+                                        <span>CALL US FREE</span>
+                                        <a href="#">
+                                            <strong>+1 86.36.166</strong>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Action Buttons ---->
+                            <div class="action-btns">
+                                <button class="btn account-btn">
+                                    <i class="fa-regular fa-user"></i>
+                                </button>
+                                <button class="btn wishlist-btn">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <button class="btn cart-btn">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                    <!-- Cart Items Count -->
+                                    <span class="cart-count">0</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Header Bottom (2) ------->
+            <div class="header-bottom">
+                <div class="container">
+                    <!-- Content Header Bottom" ------->
+                    <div class="content-header-bottom">
+                        <!-- Header Vertical Menu ------->
+                        <div class="header-vertical-menu">
+                            <!-- Widget Title -->
+                            <div class="widget-title">
+                                <!-- Icon -->
+                                <div class="icon">
+                                    <span></span>
+                                </div>
+                                <h3>all departments</h3>
+                            </div>
+
+                            <!-- Vertical Menu -->
+                            <div class="verticalMenu">
+                                <!-- Nav Menu ------>
+                                <ul class="nav-menu">
+                                    <li class="menu-item has-children">
+                                        <a href="#" class="menu-link">
+                                            <span class="menu-link-text">furntire</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-item has-children">
+                                        <a href="#" class="menu-link">
+                                            <span class="menu-link-text">bed & bath</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-item has-children">
+                                        <a href="#" class="menu-link">
+                                            <span class="menu-link-text">Outdoor</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-item has-children">
+                                        <a href="#" class="menu-link">
+                                            <span class="menu-link-text">Kitchen</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="menu-link">
+                                            <span class="menu-link-text">Decor & Pillows</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="menu-link">
+                                            <span class="menu-link-text">Storage</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="menu-link">
+                                            <span class="menu-link-text">Lighting</span>
+                                        </a>
+                                    </li>
+                                    <div class="more">
+                                        <a href="#" class="more-link">
+                                            <span class="more-link-text">other</span>
+                                        </a>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Header Menu ------->
+                        <div class="header-menu">
+                            <!-- Header Menu Top -->
+                            <div class="header-menu-top">
+                                <button id="close-menu">
+                                    <span>close</span>
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                            <ul class="nav-menu">
+                                <li class="menu-item">
+                                    <a href="index.html" class="menu-link">home</a>
+                                </li>
+                                <li class="menu-item dropdown-list">
+                                    <a href="index.html" class="menu-link">shop</a>
+                                    <!-- Toggle -->
+                                    <span class="toggle" id="shop_list"></span>
+                                    <!-- Mega Menu ------>
+                                    <div class="megaMenu nav-list-dropdown" data-list="shop_list">
+                                        <!-- Back ------->
+                                        <div class="back">
+                                            <!-- Prev Btn -->
+                                            <button class="prev" aria-hidden="false">
+                                                <span class="icon"></span>
+                                                <span class="title">shop</span>
+                                            </button>
+                                        </div>
+                                        <!-- Mega Menu Container -->
+                                        <div class="megaMenu-container">
+                                            <!-- MegaMenu Item (1) ------>
+                                            <div class="megaMenu-item">
+                                                <!-- Item Title -->
+                                                <h5 class="item-title">SHOP LAYOUT</h5>
+                                                <!-- MegaMenu List ------>
+                                                <ul class="megaMenu-list">
+                                                    <li class="list-item">
+                                                        <a href="#">Sidebar</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="#">Filter Drawer</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="#">Filter Dropdown</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="#">Filter Off Canvas</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="#">Shop With Background</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="#">Shop Image Categories</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- MegaMenu Item (2) ------>
+                                            <div class="megaMenu-item">
+                                                <!-- Item Title -->
+                                                <h5 class="item-title">PRODUCT LAYOUT</h5>
+                                                <!-- MegaMenu List ------>
+                                                <ul class="megaMenu-list">
+                                                    <li class="list-item">
+                                                        <a href="#">Layout Zoom</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="#">Layout Scroll</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="#">Layout Sticky</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="#">Layout Sticky 2NEW</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="#">Slider</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="#">Large Grid</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- MegaMenu Item (3) ------>
+                                            <div class="megaMenu-item">
+                                                <!-- MegaMenu List (1) -->
+                                                <ul class="megaMenu-list">
+                                                    <!-- List Title -->
+                                                    <h5 class="item-title">PRODUCT IMAGE</h5>
+                                                    <li class="list-item">
+                                                        <a href="#">Sidebar</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="#">Filter Drawer</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="#">Filter Dropdown</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="#">Filter Off Canvas</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="#">Shop With Background</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="#">Shop Image Categories</a>
+                                                    </li>
+                                                </ul>
+                                                <!-- MegaMenu List (2) -->
+                                                <ul class="megaMenu-list">
+                                                    <!-- List Title -->
+                                                    <h5 class="item-title">PRODUCTS TYPE</h5>
+                                                    <li class="list-item">
+                                                        <a href="#">Sidebar</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="#">Filter Drawer</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="#">Filter Dropdown</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="#">Filter Off Canvas</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="#">Shop With Background</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="#">Shop Image Categories</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- MegaMenu Item (4) ------>
+                                            <div class="megaMenu-item">
+                                                <!-- Item Title -->
+                                                <h5 class="item-title">PRODUCT EXTENDED</h5>
+                                                <!-- MegaMenu List ------>
+                                                <ul class="megaMenu-list">
+                                                    <li class="list-item">
+                                                        <a href="#">Product Countdown</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="#">Product Boost SaleHOT</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="#">Gift Boxed</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="#">Featured Icons</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="#">Trust Badges</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="#">Extra Sidebar</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="menu-item dropdown-list">
+                                    <a href="index.html" class="menu-link">blog</a>
+                                    <!-- Toggle -->
+                                    <span class="toggle" id="blog_list"></span>
+                                    <!-- Mega Menu ------>
+                                    <div class="megaMenu nav-list-dropdown" data-list="blog_list">
+                                        <!-- Back ------->
+                                        <div class="back">
+                                            <!-- Prev Btn -->
+                                            <button class="prev" aria-hidden="false">
+                                                <span class="icon"></span>
+                                                <span class="title">blog</span>
+                                            </button>
+                                        </div>
+                                        <!-- Mega Menu Container -->
+                                        <div class="megaMenu-container">
+                                            <!-- MegaMenu Item (1) ------>
+                                            <div class="megaMenu-item">
+                                                <!-- MegaMenu List (1) ------>
+                                                <ul class="megaMenu-list">
+                                                    <!-- Item Title -->
+                                                    <h5 class="item-title">BLOG STYLE</h5>
+                                                    <li class="list-item">
+                                                        <a href="#">Blog List</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="#">Blog Grid</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="#">Blog Modern</a>
+                                                    </li>
+                                                </ul>
+                                                <!-- MegaMenu List (2) ------>
+                                                <ul class="megaMenu-list">
+                                                    <!-- Item Title -->
+                                                    <h5 class="item-title">BLOG LAYOUT</h5>
+                                                    <li class="list-item">
+                                                        <a href="#">Blog Left Sidebar</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="#">Blog Right Sidebar</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="#">Blog Without Sidebar</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- MegaMenu Item (2) ------>
+                                            <div class="megaMenu-item">
+                                                <!-- MegaMenu List (1) -->
+                                                <ul class="megaMenu-list">
+                                                    <h5 class="item-title">POST LAYOUT</h5>
+                                                    <li class="list-item">
+                                                        <a href="#">Left Sidebar</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="#">Right Sidebar</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="#">Without Sidebar</a>
+                                                    </li>
+                                                </ul>
+                                                <!-- MegaMenu List (2) -->
+                                                <ul class="megaMenu-list">
+                                                    <!-- List Title -->
+                                                    <h5 class="item-title">POST FORMAT</h5>
+                                                    <li class="list-item">
+                                                        <a href="#">Post format gallery</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="#">Post format video</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="#">Post format audio</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- MegaMenu Item (3) ------>
+                                            <div class="megaMenu-item">
+                                                <!-- Item Title -->
+                                                <h5 class="item-title">RECENT POST</h5>
+                                                <!-- MegaMenu List ------>
+                                                <ul class="megaMenu-list">
+                                                    <li class="list-item">
+                                                        <div class="content">
+                                                            <a href="#">
+                                                                <img src="../images/blog-menu-1.jpg" alt="blog">
+                                                            </a>
+                                                            <a href="#" class="blog-info">
+                                                                <strong class="title">
+                                                                    Traveling Solo Is Awesome
+                                                                </strong>
+                                                                <p>
+                                                                    <span>May 30, 2022</span>
+                                                                    <span>97 Comments</span>
+                                                                </p>
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <div class="content">
+                                                            <a href="#">
+                                                                <img src="../images/blog-menu-2.jpg" alt="blog">
+                                                            </a>
+                                                            <a href="#" class="blog-info">
+                                                                <strong class="title">
+                                                                    Traveling Solo Is Awesome
+                                                                </strong>
+                                                                <p>
+                                                                    <span>May 30, 2022</span>
+                                                                    <span>97 Comments</span>
+                                                                </p>
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <div class="content">
+                                                            <a href="#">
+                                                                <img src="../images/blog-menu-3.jpg" alt="blog">
+                                                            </a>
+                                                            <a href="#" class="blog-info">
+                                                                <strong class="title">
+                                                                    Traveling Solo Is Awesome
+                                                                </strong>
+                                                                <p>
+                                                                    <span>May 30, 2022</span>
+                                                                    <span>97 Comments</span>
+                                                                </p>
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="menu-item dropdown-list">
+                                    <a href="index.html" class="menu-link">vendors</a>
+                                    <!-- Toggle -->
+                                    <span class="toggle" id="vendors_list"></span>
+                                    <!-- Vendors Dropdown List --->
+                                    <div class="nav-list-dropdown" data-list="vendors_list">
+                                        <!-- Back ------->
+                                        <div class="back">
+                                            <!-- Prev Btn -->
+                                            <button class="prev" aria-hidden="false">
+                                                <span class="icon"></span>
+                                                <span class="title">vendors</span>
+                                            </button>
+                                        </div>
+                                        <ul class="list">
+                                            <li class="list-item">
+                                                <a href="#" class="link-item">Vendor Store Listing</a>
+                                            </li>
+                                            <li class="list-item">
+                                                <a href="#" class="link-item">Store Details</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu-item dropdown-list">
+                                    <a href="page.html" class="menu-link">page</a>
+                                    <!-- Toggle -->
+                                    <span class="toggle" id="page_list"></span>
+                                    <!-- Other Page Dropdown List -->
+                                    <div class="nav-list-dropdown" data-list="page_list">
+                                        <!-- Back ------->
+                                        <div class="back">
+                                            <!-- Prev Btn -->
+                                            <button class="prev" aria-hidden="false">
+                                                <span class="icon"></span>
+                                                <span class="title">page</span>
+                                            </button>
+                                        </div>
+                                        <ul class="list">
+                                            <li class="list-item">
+                                                <a href="about.html" class="link-item">About</a>
+                                            </li>
+                                            <li class="list-item">
+                                                <a href="contact.html" class="link-item">Contact</a>
+                                            </li>
+                                            <li class="list-item">
+                                                <a href="#" class="link-item">Faq</a>
+                                            </li>
+                                            <li class="list-item">
+                                                <a href="#" class="link-item">Page 404</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- List Link Menu ------->
+                        <div class="list-link-menu">
+                            <ul>
+                                <li>
+                                    <a href="#" class="our-store">our store</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="buy">buy store</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Form Login Register ------->
+        <div id="form-login-register">
+            <!-- Box Login Form -->
+            <div class="box-form-login">
+                <!-- Close Form Btn -->
+                <button class="close-form">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <!-- Box Title -->
+                <div class="box-title">
+                    <strong>sign in</strong>
+                </div>
+                <!-- Login Form ------->
+                <form action="" id="login_form">
+                    <!-- Form Control ------->
+                    <div class="form-control">
+                        <i class="far fa-user-circle"></i>
+                        <input type="text" name="user-name" id="user_name"
+                        placeholder="Your Name" required>
+                    </div>
+                    <!-- Form Control ------->
+                    <div class="form-control">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" name="user-password" id="user_password"
+                        placeholder="Your Password" required>
+                    </div>
+                    <!-- Remember Me & Lost Password -->
+                    <div class="rememberme-lost">
+                        <div class="remember-item">
+                            <input type="checkbox" name="remeber-me" id="remember-me">
+                            <label for="remember-me">remember me</label>
+                        </div>
+                        <a href="#" class="lost-pass">Lost your password?</a>
+                    </div>
+
+                    <!-- Login Form Buttons ---->
+                    <div class="login-form-btns">
+                        <button class="btn login">login</button>
+                        <a href="account.html" class="btn account">create an account</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Start Shopping Cart -->
+        <div id="shopping_cart">
+            <!-- Cart Sidebar ------->
+            <div class="cart-sidebar">
+                <!-- Close Cart -->
+                <button id="close-cart">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <!-- Cart Header ------->
+                <div class="cart-header">
+                    <!-- Title -->
+                    <strong class="cart-title">your cart</strong>
+                    <i class="fas fa-shopping-basket"></i>
+                </div>
+
+                <!-- Cart Mesaage -->
+                <ul class="cart-msg">
+                    <li class="msg-item">
+                        <i class="fas fa-shopping-basket fa-5x"></i>
+                    </li>
+                    <li class="msg-item">
+                        <span>your cart is empty</span>
+                    </li>
+                </ul>
+
+                <!-- Cart Content ------->
+                <div class="cart-content">
+                    <div class="cart-item">
+                        <!-- Item Content -->
+                        <div class="content">
+                            <img src="../images/products/1-a.jpg" alt="product" class="pro-img">
+                            <div class="info">
+                                <span class="name">Briarwood Decorative</span>
+                                <span class="price">$20.00</span>
+                                <!-- Quantity Area ------->
+                                <div class="quantity-area">
+                                    <button class="decrease btn">&minus;</button>
+                                    <input type="text" name="quantity" class="quantity" value="1">
+                                    <button class="increase btn">&plus;</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Remove Cart Btn -->
+                        <button class="remove-cart">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                    <div class="cart-item">
+                        <!-- Item Content -->
+                        <div class="content">
+                            <img src="../images/products/2-a.jpg" alt="product" class="pro-img">
+                            <div class="info">
+                                <span class="name">Briarwood Decorative</span>
+                                <span class="price">$20.00</span>
+                                <!-- Quantity Area ------->
+                                <div class="quantity-area">
+                                    <button class="decrease btn">&minus;</button>
+                                    <input type="text" name="quantity" class="quantity" value="1">
+                                    <button class="increase btn">&plus;</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Remove Cart Btn -->
+                        <button class="remove-cart">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                    <div class="cart-item">
+                        <!-- Item Content -->
+                        <div class="content">
+                            <img src="../images/products/3-a.jpg" alt="product" class="pro-img">
+                            <div class="info">
+                                <span class="name">Briarwood Decorative</span>
+                                <span class="price">$20.00</span>
+                                <!-- Quantity Area ------->
+                                <div class="quantity-area">
+                                    <button class="decrease btn">&minus;</button>
+                                    <input type="text" name="quantity" class="quantity" value="1">
+                                    <button class="increase btn">&plus;</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Remove Cart Btn -->
+                        <button class="remove-cart">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                    <div class="cart-item">
+                        <!-- Item Content -->
+                        <div class="content">
+                            <img src="../images/products/3-a.jpg" alt="product" class="pro-img">
+                            <div class="info">
+                                <span class="name">Briarwood Decorative</span>
+                                <span class="price">$20.00</span>
+                                <!-- Quantity Area ------->
+                                <div class="quantity-area">
+                                    <button class="decrease btn">&minus;</button>
+                                    <input type="text" name="quantity" class="quantity" value="1">
+                                    <button class="increase btn">&plus;</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Remove Cart Btn -->
+                        <button class="remove-cart">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                    <div class="cart-item">
+                        <!-- Item Content -->
+                        <div class="content">
+                            <img src="../images/products/3-a.jpg" alt="product" class="pro-img">
+                            <div class="info">
+                                <span class="name">Briarwood Decorative</span>
+                                <span class="price">$20.00</span>
+                                <!-- Quantity Area ------->
+                                <div class="quantity-area">
+                                    <button class="decrease btn">&minus;</button>
+                                    <input type="text" name="quantity" class="quantity" value="1">
+                                    <button class="increase btn">&plus;</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Remove Cart Btn -->
+                        <button class="remove-cart">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                    <div class="cart-item">
+                        <!-- Item Content -->
+                        <div class="content">
+                            <img src="../images/products/3-a.jpg" alt="product" class="pro-img">
+                            <div class="info">
+                                <span class="name">Briarwood Decorative</span>
+                                <span class="price">$20.00</span>
+                                <!-- Quantity Area ------->
+                                <div class="quantity-area">
+                                    <button class="decrease btn">&minus;</button>
+                                    <input type="text" name="quantity" class="quantity" value="1">
+                                    <button class="increase btn">&plus;</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Remove Cart Btn -->
+                        <button class="remove-cart">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                    <div class="cart-item">
+                        <!-- Item Content -->
+                        <div class="content">
+                            <img src="../images/products/3-a.jpg" alt="product" class="pro-img">
+                            <div class="info">
+                                <span class="name">Briarwood Decorative</span>
+                                <span class="price">$20.00</span>
+                                <!-- Quantity Area ------->
+                                <div class="quantity-area">
+                                    <button class="decrease btn">&minus;</button>
+                                    <input type="text" name="quantity" class="quantity" value="1">
+                                    <button class="increase btn">&plus;</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Remove Cart Btn -->
+                        <button class="remove-cart">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Cart Footer -->
+                <div class="cart-footer">
+                    <!-- View Cart Link -->
+                    <a href="#" class="link">view cart</a>
+                    <!-- Checkout Link -->
+                    <a href="#" class="link">checkout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header Section -->
+    <!--!=======================================================================================-->
+    <!-- Strat Hero Section -->
+    <section id="hero-section">
+        <div class="container">
+            <!-- Row ------->
+            <div class="row">
+                <!-- Hero Col ------->
+                <div class="hero-col"></div>
+
+                <!-- Hero Content ------->
+                <div class="hero-content">
+                    <!-- Hero Slider ------->
+                    <div class="hero-slider">
+                        <!-- Slide 1 ----->
+                        <div class="slide slide-active" style="background-image: url('../images/hero-slide-1.jpg');">
+                            <!-- Slide Content ------->
+                            <div class="slide-content">
+                                <!-- Left Content ------->
+                                <div class="left-content">
+                                    <!-- Head ------->
+                                    <div class="head">
+                                        start from <span class="price">$39.99</span>
+                                    </div>
+                                    <!-- Text ------->
+                                    <div class="text">
+                                        <!-- Title ------->
+                                        <div class="title">
+                                            <strong>outdoor</strong>
+                                            <h1 class="heading">suber sale</h1>
+                                        </div>
+                                        <div class="sale">
+                                            <span>sale up to<br>30% off</span>
+                                        </div>
+                                        <!-- Special Link -->
+                                        <a href="#" class="special-link">shop now</a>
+                                    </div>
+                                </div>
+
+                                <!-- Right Content ------>
+                                <div class="right-content">
+                                    <span class="edition">2022 edition</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 ----->
+                        <div class="slide" style="background-image: url('../images/hero-slide-2.jpg')">
+                            <!-- Slide Content ------->
+                            <div class="slide-content">
+                                <!-- Left Content ------->
+                                <div class="left-content">
+                                    <!-- Head ------->
+                                    <div class="head">
+                                        start from <span class="price">$39.99</span>
+                                    </div>
+                                    <!-- Text ------->
+                                    <div class="text">
+                                        <!-- Title ------->
+                                        <div class="title">
+                                            <strong>product</strong>
+                                            <h1 class="heading">20% off</h1>
+                                        </div>
+                                        <div class="sale">
+                                            <span>sale up to<br>30% off</span>
+                                        </div>
+                                        <!-- Special Link -->
+                                        <a href="#" class="special-link">shop now</a>
+                                    </div>
+                                </div>
+
+                                <!-- Right Content ------>
+                                <div class="right-content">
+                                    <span class="edition">2022 edition</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 ----->
+                        <div class="slide" style="background-image: url('../images/hero-slide-3.jpg');">
+                            <!-- Slide Content ------->
+                            <div class="slide-content">
+                                <!-- Left Content ------->
+                                <div class="left-content">
+                                    <!-- Head ------->
+                                    <div class="head">
+                                        start from <span class="price">$39.99</span>
+                                    </div>
+                                    <!-- Text ------->
+                                    <div class="text">
+                                        <!-- Title ------->
+                                        <div class="title">
+                                            <strong>spring</strong>
+                                            <h1 class="heading">collection</h1>
+                                        </div>
+                                        <div class="sale">
+                                            <span>sale up to<br>30% off</span>
+                                        </div>
+                                        <!-- Special Link -->
+                                        <a href="#" class="special-link">shop now</a>
+                                    </div>
+                                </div>
+
+                                <!-- Right Content ------>
+                                <div class="right-content">
+                                    <span class="edition">2022 edition</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Dots Control ------->
+                        <div class="dots-control">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+
+                    <!-- Hero Banners ------->
+                    <div class="hero-banners">
+                        <!-- Banner 1 -->
+                        <div class="banner">
+                            <img class="img-fluid" src="../images/hero-banner-1.jpg" alt="banner">
+                            <!-- Banner Content ------->
+                            <div class="banner-content">
+                                <!-- Head ------->
+                                <div class="head">
+                                    <span>sale up to</span>
+                                    <span>30% off</span>
+                                </div>
+                                <!-- Title -->
+                                <h4 class="title">Collection<br>Lights</h4>
+                                <!-- Banner Link -->
+                                <a href="#" class="banner-link">shop now</a>
+                            </div>
+                        </div>
+
+                        <!-- Banner 2 -->
+                        <div class="banner">
+                            <img class="img-fluid" src="../images/hero-banner-2.jpg" alt="banner">
+                            <!-- Banner Content ------->
+                            <div class="banner-content">
+                                <!-- Head ------->
+                                <div class="head">
+                                    <span>sale up to</span>
+                                    <span>30% off</span>
+                                </div>
+                                <!-- Title -->
+                                <h4 class="title">Kitchen Sale<br>30% off</h4>
+                                <!-- Banner Link -->
+                                <a href="#" class="banner-link">shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Hero Section -->
+    <!--!=======================================================================================-->
+    <!--* Start Home Page Content -->
+    <section id="home_content">
+        <div class="container">
+            <!-- Row ------->
+            <div class="row">
+                <!-- Home Sidebar --------->
+                <aside class="home-sidebar">
+                    <!-- Sidebar Item  -->
+                    <div class="sidebar-item">
+                        <img src="../images/img15-3.jpg.webp" class="img-fluid" alt="banner">
+                        <div class="item-content">
+                            <!-- Title -->
+                            <strong class="title">
+                                SALE UP TO<br>30% OFF
+                            </strong>
+                            <a href="#" class="shop-link">shop now</a>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Right Content ------->
+                <div class="right-content">
+                    <!-- Categories ------->
+                    <section id="categories">
+                        <!-- Categories Container -->
+                        <div class="categories-container">
+                            <!-- Swiper -->
+                            <div class="swiper categories-slider">
+                                <div class="swiper-wrapper">
+
+                                    <!-- Slide 1 ------>
+                                    <div class="swiper-slide">
+                                        <!-- Cat Item -->
+                                        <div class="cat-item">
+                                            <a href="#" class="img">
+                                                <img src="../images/cate14.jpg.webp" class="img-fluid" alt="category image">
+                                                <strong class="cat-name">decor</strong>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slide 2 ------>
+                                    <div class="swiper-slide">
+                                        <!-- Cat Item -->
+                                        <div class="cat-item">
+                                            <a href="#" class="img">
+                                                <img src="../images/img2-3.jpg.webp"class="img-fluid" alt="category image">
+                                                <strong class="cat-name">dining chair</strong>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slide 3 ------>
+                                    <div class="swiper-slide">
+                                        <!-- Cat Item -->
+                                        <div class="cat-item">
+                                            <a href="#" class="img">
+                                                <img src="../images/cate-12.jpg.webp" class="img-fluid" alt="category image">
+                                                <strong class="cat-name">dining room</strong>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slide 3 ------>
+                                    <div class="swiper-slide">
+                                        <!-- Cat Item -->
+                                        <div class="cat-item">
+                                            <a href="#" class="img">
+                                                <img src="../images/cate-12.jpg.webp" class="img-fluid" alt="category image">
+                                                <strong class="cat-name">dining room</strong>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slide 3 ------>
+                                    <div class="swiper-slide">
+                                        <!-- Cat Item -->
+                                        <div class="cat-item">
+                                            <a href="#" class="img">
+                                                <img src="../images/cate-12.jpg.webp" class="img-fluid" alt="category image">
+                                                <strong class="cat-name">dining room</strong>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- <div class="swiper-pagination"></div> -->
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- dining chair -->
+    <!--* End Home Page Content -->
+    <!--!=======================================================================================-->
+    <!--===================== Main Js File =====================-->
+    <script src="../js/main.js" async></script>
+    <!--===================== Link Swiper JS =====================-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        let categoryDropdown = _ => {
+            const selectCategory = document.querySelector(".select_category");
+            // Add Active Class To selectCategory DOM Eleemnt
+            selectCategory.classList.toggle("open");
+        }
+    </script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".categories-slider", {
+            // slidesPerView: 1,
+            // spaceBetween: 10,
+
+            // pagination: {
+            //     el: ".swiper-pagination",
+            //     clickable: true,
+            // },
+
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                },
+            },
+        });
+    </script>
+</body>
+</html>

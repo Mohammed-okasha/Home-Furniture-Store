@@ -1,0 +1,126 @@
+// Centering Mixin
+@mixin centering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// SpaceBetween Mixin
+@mixin space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// Grid Layout Mixin
+@mixin grid-layout($min) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($min, 1fr));
+}
+
+// Grid Columns Mixin
+@mixin grid_columns($col) {
+    display: grid;
+    grid-template-columns: repeat($col, 1fr);
+}
+
+// BreakPoint Mixin
+@mixin breakPoint($screen) {
+    @if ($screen == "large") {
+        @media (min-width: 1200px) {
+            @content;
+        }
+
+    } @else if ($screen == "medium") {
+        @media (min-width: 992px) and (max-width: 1199px) {
+            @content;
+        }
+
+    } @else if ($screen == "small") {
+        @media (min-width: 768px) and (max-width: 991px) {
+            @content;
+        }
+
+    }  @else if ($screen == "mobile") {
+        @media (max-width: 767px) {
+            @content;
+        }
+    }
+}
+
+// Border Mixin
+@mixin border($direction, $color) {
+    @if ($direction == "all") {
+        border: 1px solid $color;
+
+    } @else if ($direction == "right") {
+        border-right: 1px solid $color;
+
+    } @else if ($direction == "bottom") {
+        border-bottom: 1px solid $color;
+
+    }  @else if ($direction == "left") {
+        border-left: 1px solid $color;
+    }
+    @else if ($direction == "top") {
+        border-top: 1px solid $color;
+    }
+}
+
+// Keyfream Mixin
+@mixin keyF($anim) {
+    @keyframes #{$anim} {
+        @content;
+    }
+}
+
+// Special icon Mixin
+@mixin special-icon($color) {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px $color;
+}
+
+// Btn Mixin
+@mixin btn($width, $height) {
+    width: $width;
+    height: $height;
+    border: none;
+    cursor: pointer;
+}
+
+/**
+*! New Mixin
+- Background Image Mixin
+*/
+@mixin bg_image($name) {
+    $url: "../images/#{$name}";
+    background-image: url($url);
+}
+
+// Circle Mixin
+@mixin circle($dimensions) {
+    width: $dimensions;
+    height: $dimensions;
+    border-radius: 50%;
+}
+
+// Display Mixin
+@mixin display($screen) {
+    @if ($screen == "small") {
+        @media (max-width: 991px) {
+            @content;
+        }
+    }
+}
+
+
+@mixin scroll_bar {
+    &::-webkit-scrollbar {width: 6px;}
+    &::-webkit-scrollbar-track {
+        background-color: #eee;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2) inset;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $orange;
+    }
+}

@@ -1,0 +1,62 @@
+// Import Variables File
+@import "../sass/variables";
+
+// Logo Class
+.logo {
+    display: inline-block;
+    width: 250px;
+    img {
+        max-width: 130px;
+        vertical-align: middle;
+    }
+}
+
+.img-fluid {
+    width: 100%;
+    user-select: none;
+    object-fit: cover;
+}
+
+.special-link {
+    display: inline-block;
+    background-color: $brown;
+    color: $white;
+    height: 40px; width: 150px;
+    text-align: center; line-height: 40px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    transition: $main-trans;
+    font: {
+        size: 14px;
+        weight: 500;
+    }
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    &:hover:any-link {
+        background-color: $orange;;
+    }
+}
+
+.menu-oevrlay {
+    @extend .fixed-overlay;
+    &.active {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.position-center {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fixed-overlay {
+    position: fixed;
+    inset: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 300;
+    visibility: hidden;
+    opacity: 0;
+    transition: $second-trans;
+}
